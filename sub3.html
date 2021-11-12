@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/stylesub3.css">
+  <title>Document</title>
+  <script>
+    $(function(){
+      $('.pic').click(function(){
+        var aa = $(this).attr('src');
+        $('#bigpic').attr('src',aa);
+      })
+    })
+
+    $(function(){
+      $('#category p').eq(0).click(function(){
+        var picture = $('.pic');
+        var picture2 = $('.picture h3');
+        var array1 =  ["경회루","영추문","태원전","건청궁","근정전","자경전","장고","태원전" ]
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/season/spring/'+i+'.jpg')
+          $(picture2[i-1]).text(array1[i-1]);
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $('#category p').eq(1).click(function(){
+        var picture = $('.pic');
+        var picture2 = $('.picture h3');
+        var array1 =  ["경회루","사정전","근정전","근정전","영제교","자경전","향원정","함화당" ]
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/season/summer/'+i+'.jpg')
+          $(picture2[i-1]).text(array1[i-1]);
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $('#category p').eq(2).click(function(){
+        var picture = $('.pic');
+        var picture2 = $('.picture h3');
+        var array1 =  ["광화문","경회루","녹산","복수당","숙문당","신무문","신무문","연길당" ]
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/season/auttum/'+i+'.jpg')
+          $(picture2[i-1]).text(array1[i-1]);
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $('#category p').eq(3).click(function(){
+        var picture = $('.pic');
+        var picture2 = $('.picture h3');
+        var array1 =  ["강녕전","강녕전","건청궁","근정전","교태전","근정전","함화당","향원정" ]
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/season/winter/'+i+'.jpg')
+          $(picture2[i-1]).text(array1[i-1]);
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $("#side div").eq(0).click(function(){
+        $("#category").css("display","flex");
+        $("#bigpicture").css("height","90%");
+        $('.picture h3').css("display","block");
+        var picture = $('.pic');
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/season/spring/'+i+'.jpg')
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $("#side div").eq(1).click(function(){
+        $("#category").css("display","none");
+        $("#bigpicture").css("height","100%");
+        $('.picture h3').css("display","none");
+        var picture = $('.pic');
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/event1/'+i+'.jpg');
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $("#side div").eq(2).click(function(){
+        $("#category").css("display","none");
+        $("#bigpicture").css("height","100%");
+        $('.picture h3').css("display","none");
+        var picture = $('.pic');
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/event2/'+i+'.jpg');
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+    $(function(){
+      $("#side div").eq(3).click(function(){
+        $("#category").css("display","none");
+        $("#bigpicture").css("height","100%");
+        $('.picture h3').css("display","none");
+        var picture = $('.pic');
+        for(i=1; i<=8; i++){
+          $(picture[i-1]).attr('src','./image/event3/'+i+'.jpg');
+        }
+        var ff =  $('.pic1').attr('src');
+        $('#bigpic').attr('src',ff);
+      })
+    })
+
+
+
+
+  </script>
+</head>
+<body>
+  <div id = "wrap">
+    <header id = "header">
+      <a href="./index.html"><div id ="logo"><img src="./image/header/logo2.png"></div></a>
+      <img src="./image/header/hamburgericon.png" alt ="xx" id ="hamburgernav">
+      <div id = "hamburgermenu">
+        <div class="item item1"><a href="./sub1.html">경복궁 관리소</a></div>
+                <div class="item item2"><a href="./sub3.html">미리보는 경복궁</a></div>
+                <div class="item item3"><a href="./sub2.html">경복궁 행사</a></div>
+                <div class="item item4"><a href="./sub1.html">관람안내</a></div>
+                <div class="item item5"><a href="./sub1.html">관람예약/취소</a></div>
+      </div>
+  </header>
+  <div id = "container1">
+    <div id = "container">
+      <div id  = "side">
+        <div>사계</div>
+        <div>수문장 교대의식</div>
+        <div>경복궁 야간관람</div>
+        <div>칠궁</div>
+      </div>
+      <div id = "gallery">
+        <div id = "bigcotainer">
+          <div id = "category">
+            <p>봄</p>
+            <p>여름</p>
+            <p>가을</p>
+            <p>겨울</p>
+          </div>   
+          <div id = "bigpicture">
+            <img src="./image/season/spring/1.jpg" alt="x" id = "bigpic">
+          </div>  
+        </div>
+        <div id = "smallcontainer">
+          <div id = "left">
+            <div id = "button">
+              <img src="./image/common/left-arrow.png" id="left1">
+            </div>
+          </div>
+          <div id = "right">
+            <div id = "button">
+              <img src="./image/common/right-arrow.png" id="right1">
+            </div>
+          </div>
+          <div id = "smallpicturecontainer">
+            <div class = "picture picture1">
+              <div class = "item item1">
+                <img src="./image/season/spring/1.jpg" alt="x" class = "pic pic1">
+              </div>
+              <h3>경회루</h3>
+            </div>
+            <div class = "picture picture2">
+              <div class = "item item2">
+                <img src="./image/season/spring/2.jpg" alt="x" class = "pic pic2">
+              </div>
+              <h3>영추문</h3>
+            </div>
+            <div class = "picture picture3">
+              <div class = "item item3">
+                <img src="./image/season/spring/3.jpg" alt="x" class = "pic pic3"> 
+              </div>
+              <h3>태원전</h3>
+            </div>
+            <div class = "picture picture4">
+              <div class = "item item4">
+                <img src="./image/season/spring/4.jpg" alt="x" class = "pic pic4">
+              </div>
+              <h3>건청궁</h3>
+            </div>
+            <div class = "picture picture5">
+              <div class = "item item5">
+                <img src="./image/season/spring/5.jpg" alt="x" class = "pic pic5">
+              </div>
+              <h3>근정전</h3>
+            </div>
+            <div class = "picture picture6">
+              <div class = "item item6">
+                <img src="./image/season/spring/6.jpg" alt="x" class = "pic pic6">
+              </div>
+              <h3>자경전</h3>
+            </div>
+            <div class = "picture picture7">
+              <div class = "item item7">
+                <img src="./image/season/spring/7.jpg" alt="x" class = "pic pic7">
+              </div>
+              <h3>장고</h3>
+            </div>
+            <div class = "picture picture8">
+              <div class = "item ite8">
+                <img src="./image/season/spring/8.jpg" alt="x" class = "pic pic8">
+              </div>
+              <h3>태원전</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+      <div id = "footer">
+          <div id = "logo2">
+              <img src="./image/footer/logo2.png">
+          </div>
+          <div id = "description">
+              <p>
+                  우)03045 서울특별시 종로구 사직로 161<br>
+                  전화번호(02) 3700-3900 팩스(02) 3700-3909<br>
+                  COPYRIGHT 2014 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.
+              </p>
+              <div id = "logo3">
+                  <img src="./image/footer/logo3.png">
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+  </div>
+  <script src="./js/scriptsub.js"></script>
+  <script>
+     const buttonRight_1 = document.getElementById('right1');
+      const buttonLeft_1 = document.getElementById('left1');
+
+      buttonRight_1.onclick = function () {
+      document.getElementById('smallpicturecontainer').scrollLeft += 500;
+      };
+      buttonLeft_1.onclick = function () {
+      document.getElementById('smallpicturecontainer').scrollLeft -= 500;
+      };
+  </script>
+</body>
+</html>

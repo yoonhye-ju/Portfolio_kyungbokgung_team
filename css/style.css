@@ -1,0 +1,661 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Noto Sans Display', sans-serif; */
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: flex-end; */
+    /* background-color: blue; */
+    z-index: 100;
+}
+
+header > img {
+    width: 50px;
+    height: 50px;
+    /* justify-self: center; */
+}
+
+header > img:hover {
+    cursor: pointer;
+}
+
+#slider {
+    width: 100%;
+    height: 100vh;
+    /* background-color: pink; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#slider > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    /* background-color: pink; */
+}
+
+#header #viewmore {
+    color: white;
+    /* background-color: #3672f7; */
+    width: 120px;
+    height: 38px;
+    border: solid 3px #3672f7;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    left: 13.25%;
+    z-index: 100;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#header #viewmore:hover {
+    border: solid 3px #2159e0;
+    cursor: pointer;
+}
+
+#header #viewmore:active {
+    border: solid 3px #1748c1;
+}
+
+#header #learnmore:hover {
+    cursor: pointer;
+}
+
+#header div #learnmore {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    /* background-color: pink; */
+    transition: 10s;
+    animation-name: move1;
+    animation-duration : 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes move1 {
+    to {transform: translateX(-50%) translateY(10px)}
+}
+
+#header #logo {
+    width: 200px;
+    height: 50px;
+    /* background-color: pink; */
+    position: relative;
+    top: 30px;
+    left: 30px;
+    /* left: 50%;
+    transform: translateX(-75%); */
+}
+
+#header #logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider > #buttontitle{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    color: white;
+}
+
+#hamburgernav {
+    position: relative;
+    top: 30px;
+    left: 86%;
+    z-index: 100;
+}
+
+#hamburgermenu {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    /* background-color: pink; */
+    backdrop-filter: blur(20px);
+    /* display: none; */
+    box-shadow: -10px 10px 40px -8px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburgermenu div {
+    width: 200px;
+    height: 5%;
+    /* background-color: pink; */
+    color: black;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  inset 0px 0px 5px 1px #000000;
+    /* position: relative; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 60px;
+}
+
+#hamburgermenu .item:hover {
+    cursor: pointer;
+    box-shadow:  inset 0px 0px 5px 3px #000000;
+}
+
+#slider video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section {
+    width: 100%;
+    background-color: skyblue;
+    position: absolute;
+    top: 460vh;
+    left: 0;
+    margin: 0
+}
+
+#covid {
+    width: 100%;
+    height: 30vh;
+    background-color: #e8e5e5;
+    display: flex;
+    align-items: center;
+}
+
+#covid #container {
+    margin-left: 260px;
+}
+
+
+#covid #image {
+    width: 50px;
+    height: 50px;
+    /* background-color: pink; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#covid #image img {
+    width: 100%;
+    height: 100%;
+}
+
+#covid span {
+    font-size: 25px;
+}
+
+#covid p {
+    font-size: 15px;
+    /* line-height: 4px; */
+}
+
+#covid a {
+    font-size: 19px;
+    /* line-height: 4px; */
+}
+
+#covid a:visited {
+    color: black;
+}
+
+#article1 {
+    width: 100%;
+    height: 50vh;
+    background-color: pink;
+    display: flex;
+    color: white;
+}
+
+#article1 h1,#article1 p,#article1 a {
+    margin-left: 260px;
+}
+
+#article1 #img {
+    width: 40%;
+    height: 100%;
+    margin-left: 0;
+    background-color: gray;
+}
+
+#article1 img {
+    width: 100%;
+    height: 100%;
+}
+
+#article1 #description {
+    width: 60%;
+    height: 100%;
+    background-color: #2b343d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#article1 p {
+    line-height: 40px;
+}
+
+#article2 {
+    width: 100%;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    color: white;
+}
+
+#article2 h1,#article2 p,#article2 a {
+    margin-left: 260px;
+}
+
+#article2 #img {
+    width: 40%;
+    height: 100%;
+    background-color: gray;
+    position: relative;
+    right: 0;
+}
+
+#article2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#article2 #description {
+    width: 60%;
+    height: 100%;
+    background-color: #273039;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#article2 p {
+    line-height: 40px;
+}
+
+#article3 {
+    width: 100%;
+    height: 50vh;
+    /* background-color: darkorange; */
+    display: flex;
+    color: white;
+}
+
+#article3 h1,#article3 p,#article3 a {
+    margin-left: 260px;
+}
+
+#article3 #img {
+    width: 40%;
+    height: 100%;
+    margin-left: 0;
+    background-color: gray;
+}
+
+#article3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#article3 #description {
+    width: 60%;
+    height: 100%;
+    background-color: #242b33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#article3 p {
+    line-height: 40px;
+}
+
+section #viewmore2:hover {
+    background-color: #2159e0;
+    cursor: pointer;
+}
+
+section #viewmore2:active {
+    background-color: #1748c1;
+}
+
+section h1 {
+    font-size: 35px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+section #viewmore2 {
+    color: white;
+    background-color: #3672f7;
+    width: 120px;
+    height: 38px;
+    border: none;
+    z-index: 100;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#event {
+    width: 100%;
+    height: 100vh;
+    /* background-color: darkorchid; */
+    position: relative;
+    top: 640vh;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+#event .item {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-right: -5.6px;
+    margin-bottom: 0;
+}
+
+.item1 {
+    /* background: linear-gradient(45deg, #fff600, #ff0060, #6c00ff); */
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#event .item2 {
+    background-image: url('./1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.item2 #event2 {
+    width: 1200px;
+    height: 390px;
+    background-color: #e8dbd5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px 3px #0F1610;
+    display: flex;
+}
+
+.item2 #event2 #a {
+    width: 800px;
+    height: 100%;
+    background-image: url('./2.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.item2 #event2 #a #aa {
+    writing-mode: vertical-rl;
+    color: #fffdff;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.item2 #event2 #a #bb {
+    color: #fffdff;
+    margin-top: 200px;
+    margin-left: 470px;
+    font-size: 30px;
+}
+
+.item2 #event2 #b {
+    width: 400px;
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.item2 #event2 #b h3 {
+    font-size: 25px;
+}
+
+.item2 #event2 #b a {
+    width: 120px;
+    height: 38px;
+    background-color: #c5beb6;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 7px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.item2 #event2 #b a:visited {
+    color: black;
+}
+
+
+#event .item3 {
+    background-color: #052079;
+background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#event .item #event3 {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* background-image: url("./3.jpg");
+    background-position: center;
+    background-size: 100% 100%; */
+
+}
+#event .item #event3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#event .item #event3 #description {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    /* background-color: pink; */
+}
+
+#event3 #description h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#event3 #description h1 {
+    font-size: 120px;
+}
+
+#event3 #description p {
+    font-size: 20px;
+}
+
+#event3 #description a {
+    color: white;
+    background-color: #3672f7;
+    width: 120px;
+    height: 38px;
+    border: none;
+    z-index: 100;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#event3 #description a:hover {
+    background-color: #2159e0;
+    cursor: pointer;
+}
+
+#dot {
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    /* background-color: black; */
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    /* transform: translateX(-50%); */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 21vh;
+    background-color: #6d6d6d;
+    position: relative;
+    top: 640vh;
+    left: 0;
+}
+
+#footer {
+    width: 1200px;
+    height: 100%;
+    /* background-color: pink; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#footer #logo2 {
+    width: 200px;
+    height: 50px;
+    /* background-color: red; */
+    /* align-self: flex-start; */
+    margin-top: 20px;
+}
+
+#footer #logo2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#footer #description {
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: salmon; */
+    display: flex;
+}
+
+#footer #description p {
+    width: 50%;
+    line-height: 30px;
+    color: white;
+    /* background-color: springgreen; */
+}
+
+#footer #description #logo3 {
+    width: 147px;
+    height: 64px;
+    /* background-color: turquoise; */
+    align-self: center;
+    margin-left: 453px;
+}
+
+#footer #description #logo3 img {
+    width: 100%;
+    height: 100%;
+}
+
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <title> 경복궁 수라상</title>
+        <meta charset="utf-8">
+      
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/sub(food).css">
+        <link rel="stylesheet" href="css/font.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            $(function () {
+                    function prev() {
+                        $('.slide li:last').prependTo('.slide');
+                        $('.slide').css('margin-left', -1903 ); // $('.slide').css({marginLeft:-1000});
+                        $('.slide').stop().animate({ marginLeft: 0 }, 800);
+                    }
+
+                    function next() {
+                        $('.slide').stop().animate({ marginLeft: -1903 }, function () {
+                            $('.slide li:first').appendTo('.slide');
+                            $('.slide').css({ marginLeft: 0 });
+                        });
+                    }
+
+                    function slide() {
+                        $('.slide').stop().animate({ marginLeft: -1903 }, function () {
+                            $('.slide li:first').appendTo('.slide');
+                            $('.slide').css({ marginLeft: 0 });
+                        });
+                    }
+
+                    setInterval(slide, 3000);
+
+                    $('.prev').click(function () {
+                        prev();
+                    });
+
+                    $('.next').click(function () {
+                        next();
+                    });
+                });
+
+                $(function(){
+        $("#hamburgermenu").hide();
+    })
+
+    $(function(){
+        $("#hamburgernav").click(function(){
+            $("#hamburgermenu").toggle();
+        })
+
+        $(window).scroll(function(){
+            $("#hamburgermenu").hide();
+        })
+    })
+            
+        </script>
+      </head>
+
+<body>
+    <header id = "header">
+        <a href="./index.html"><div id ="logo"><img src="./image/header/logo3.png"></div></a>
+        <img src="./image/header/hamburgericon2.png" alt ="xx" id ="hamburgernav">
+        <div id = "hamburgermenu">
+            <div class="item item1"><a href="./sub1.html">경복궁 관리소</a></div>
+                <div class="item item2"><a href="./sub3.html">미리보는 경복궁</a></div>
+                <div class="item item3"><a href="./sub2.html">경복궁 행사</a></div>
+                <div class="item item4"><a href="./sub1.html">관람안내</a></div>
+                <div class="item item5"><a href="./sub1.html">관람예약/취소</a></div>
+        </div>
+    </header>
+    <div id="back" style="background-image:url(img/hanji.jpg);">
+        <div id="slidewrap">
+            <ul class="slide">
+                <li><img src="img/slide01.jpg" alt="slide01"></li>
+                <li><img src="img/slide02.jpg" alt="slide02"></li>
+                <li><img src="img/slide03.jpg" alt="slide03"></li>
+                <li><img src="img/slide04.jpg" alt="slide04"></li>
+            </ul>  
+            <span class="prev">&lt;</span>        
+            <span class="next">&gt;</span>        
+        </div>
+
+    <div class="extra_first"></div>
+
+        <div id="story">
+            <div class="story_box">
+                <div class="story_line_top"></div>
+                <span>
+                    '도슭'은 도시락의 옛말로 왕과 왕비에게 올리던 <br><br>
+
+                        최고의 일상식인 12첩 밥상을 현대적으로 해석하여 <br><br>
+
+                        합에 정갈히 나누어 담아냈습니다. <br><br>
+
+                        &lt;도슭수라상&gt;을 구성하는 열두 가지 음식에는 <br><br>
+
+                        선조들의 음식 철학인 음양오행과 함께 약과 음식은 <br><br>
+
+                        그 근원이 같다는 약식동원의 의미가 담겨있습니다. 
+                </span> 
+                <div class="story_line_bottom"></div>
+            </div>
+        </div>
+
+        <div id="icon">
+            <div class="icon_box">
+                <div class="icon_box_set">
+                    <img src="img/icon01.png" alt="icon01">
+                    <img src="img/icon02.png" alt="icon02">
+                    <img src="img/icon03.png" alt="icon03">
+                </div>
+            </div>
+        </div>
+
+        <div class="extra_second"></div>
+
+        <div id="surasang">
+            <div class="surasang_box">
+                <div class="surasang_left">
+                    <div class="surasang_left_box">
+                        <span style="font-size: 20px; font-family: 'RIDIBatang'"><b>달빛과 함께 되살아난 궁궐의 맛!</b></span><br>
+                        <span style="font-size: 60px;"><b>도슭수라상</b></span><br>
+                        <p>
+                            배추김치, 명란젓, 대하잣즙채, <br>
+                            탕평채, 호두조림, 소머리편육, <br>
+                            더덕구이, 전복초, 진지, <br>
+                            전2종(새송이전, 애호박전), <br>
+                            떡갈비, 석류탕
+                        </p>
+                    </div>
+                </div>
+                <div class="surasang_right">
+                    <img src="img/sojubang03.jpg" alt="sojubang03">
+                </div>
+            </div>
+        </div>
+
+        <div class="extra_third"></div>
+
+        <div id="flower_and_sweets">
+            <div id="flower">
+                <div class="flower_box">
+                    <img src="img/fish.jpg" alt="fish">
+                    <div class="flower_box_text">
+                        <span style="font-size: 20px;font-family: 'RIDIBatang'"><b>꽃잎 속에 담긴 광어</b></span><br>
+                        <span style="font-size: 60px;"><b>꽃별찬</b></span><br>
+                        <p>광어회</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sweets">
+                <div class="sweets_box">
+                    <img src="img/sweets.jpg" alt="sweets">
+                    <div class="sweets_box_text">
+                        <span style="font-size: 20px; font-family: 'RIDIBatang';"><b>시대를 잇는 달다구리!</b></span><br>
+                        <span style="font-size: 60px;"><b>궁중병과</b></span><br>
+                        <p>사인귤피차, 편강, 도라지정과, 주악</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra_fourth"></div>
+
+        <div id="welcome">
+            <div class="welcome_box">
+                <p>경복궁에서 궁중병과와 궁중약차를 좀 더 즐기고 싶으시다면?</p>
+                <span><b>경복궁 생과방으로 어서오세요!</b></span>
+            </div>
+        </div>
+
+    <div class="extra_fifth"></div>
+    
+    <div id="sangabang">
+        <div class="sangabang_box">
+            <div class="sangabang_left">
+                <p><b>경복궁 생과방</b></p>
+            </div>
+
+            <div class="sangabang_right">
+                <p>
+                경복궁 소주방 전각에 위치한 '생과방'은 궁중의 육처소(六處所)<br>
+                가운데 하나이며, '국왕과 왕비'의 후식과 별식을 준비하던 곳으로<br>
+                '생물방'이라고도 불렸습니다. 경복궁 생과방 프로그램은 <br>
+                조선왕조실록의 내용을 토대로 실제 임금이 먹었던 궁중병과와 <br>
+                궁중약차를 오늘날에도 즐길 수 있도록 구성된 <b>유료 프로그램</b>입니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookies">
+        <p><b>궁중병과</b></p>
+        <div class="cookies_line"></div>
+    </div>
+
+    <div id="cookies_background">
+        <div class="cookiesbackground">
+            <div class="cookies_box">
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang01.png" alt="saenggabang01"></a>
+                    <a href="#"><p>서여향병</p></a>
+                    <span>2021년 경복궁 생과방의 대표 메뉴로<br>마로 만든 향기로운 떡입니다.</span>
+                    <h4>2,500원</h4>
+                </div>
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang02.jpeg" alt="saenggabang02"></a>
+                    <a href="#"><p>곶감오림</p></a>
+                    <span>말린 곶감을 꽃잎 모양으로 오려내고<br>잣으로 꽃술을 장식한 음식입니다.</span>
+                    <h4>1,000원</h4>
+                </div>
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang03.png" alt="saenggabang03"></a>
+                    <a href="#"><p>주악</p></a>
+                    <span>조선시대 궁중 잔치에 올리며, 귀한<br>손님의 다과상에 내던 음식입니다.</span>
+                    <h4>2,000원</h4>
+                </div>
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang04.png" alt="saenggabang04"></a>
+                    <a href="#"><p>약과</p></a>
+                    <span>약이 되는 과자라는 뜻으로<br>정성을 들여 만드는 수제 약과입니다.</span>
+                    <h4>1,000원</h4>
+                </div>
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang05.jpeg" alt="saenggabang05"></a>
+                    <a href="#"><p>사과정과</p></a>
+                    <span>과일을 설탕에 재거나 졸여서 만든 <br> 조선시대 제례음식 정과입니다.</span>
+                    <h4>1,000원</h4>
+                </div>
+                <div class="cookiebox">
+                    <a href="#"><img src="img/saenggabang06.jpeg" alt="saenggabang06"></a>
+                    <a href="#"><p>매작과</p></a>
+                    <span>'매화나무에 참새가 앉아 있는 <br> 형상을 한 한과'라는 의미입니다.</span>
+                    <h4>1,000원</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra_sixth"></div>
+
+    <div id="drink">
+        <p><b>궁중약차</b></p>
+        <div class="drink_line"></div>
+    </div>
+
+    <div id="drink_background">
+        <div class="drinkbackground">
+            <div class="drink_box">
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang07.jpeg" alt="saenggabang01"></a>
+                    <a href="#"><p>건공다</p><sub><small>(인삼, 백출, 건강, 감초)</small></sub></a>
+                    <span>영조의 사랑을 받은 처방으로<br>2021년 생과방 대표 궁중약차입니다.</span>
+                    <h4>5,000원</h4>
+                </div>
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang08.jpeg" alt="saenggabang02"></a>
+                    <a href="#"><p>삼귤다</p><sub><small>(인삼, 귤피, 대추)</small></sub></a>
+                    <span>인삼과 귤피로 만들어 기의 흐름을 <br> 순조롭게 도와주는 약차입니다.</span>
+                    <h4>4,000원</h4>
+                </div>
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang09.jpeg" alt="saenggabang03"></a>
+                    <a href="#"><p>감국다</p><sub><small>(국화, 구기자)</small></sub></a>
+                    <span>숙종과 영조의 건강 관리에 쓰였던<br>마음을 가라앉혀주는 약차입니다.</span>
+                    <h4>4,000원</h4>
+                </div>
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang10.jpeg" alt="saenggabang04"></a>
+                    <a href="#"><p>담강다</p><sub><small>(생강, 꿀)</small></sub></a>
+                    <span>소화불능을 앓은 순조의 건강을 위해<br>생강과 꿀로 만든 약차입니다.</span>
+                    <h4>4,000원</h4>
+                </div>
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang11.jpeg" alt="saenggabang05"></a>
+                    <a href="#"><p>오미자다</p><sub><small>(오미자)</small></sub></a>
+                    <span>중종의 번열과 갈증을 치료하고자 <br>했던 새콤달콤한 약차입니다.</span>
+                    <h4>4,000원</h4>
+                </div>
+                <div class="drinkbox">
+                    <a href="#"><img src="img/saenggabang12.jpeg" alt="saenggabang06"></a>
+                    <a href="#"><p>대추차</p><sub><small>(대추)</small></sub></a>
+                    <span>잘 말린 대추를 달여서 만들어<br> 성질이 따뜻하고 맛이 단 약차입니다.</span>
+                    <h4>4,000원</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra_seventh"></div>
+
+    <div id="map">
+        <p><b>오시는 길</b></p>
+        <div class="map_line"></div>
+    </div>
+
+    <div id="map_background">
+        <div class="map_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.9502558403915!2d126.97600441558865!3d37.57978903112623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca35707e686a5%3A0x5a5fc45e6e076e45!2z6rK967O16raBIOyDneqzvOuwqQ!5e0!3m2!1sko!2skr!4v1636094576290!5m2!1sko!2skr" width="845" height="450" style="border:0;" allowfullscreen=""></iframe>
+            
+            <div class="map_box_text">
+                <p>경복궁 생과방</p>
+                <a href="https://www.google.com/maps?ll=37.579187,126.977846&z=16&t=m&hl=ko&gl=KR&mapclient=embed&cid=6512139496052977221"
+                    target="_blank">
+                    <img src="img/icon_map.png" width="30" height="30" alt="iconmap">
+                    
+                <div class="tooltip">
+                    <h3>서울특별시 종로구 세종로</h3>
+                    <span class="tooltiptext">지도로 이동</span>
+                </div>
+                    
+                </a>
+            </div>
+            <div class="text_line"></div>
+            <span>생과방은 경복궁 소주방 권역에 위치하고 있습니다. 경복궁 입구에서 교태전까지 직진 후 오른편 쪽문으로 나오시면 됩니다.</span>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id = "footer">
+        <div id = "logo2">
+            <img src="./image/footer/logo2.png">
+        </div>
+        <div id = "description">
+            <p>
+                우)03045 서울특별시 종로구 사직로 161<br>
+                전화번호(02) 3700-3900 팩스(02) 3700-3909<br>
+                COPYRIGHT 2014 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.
+            </p>
+            <div id = "logo3">
+                <img src="./image/footer/logo3.png">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyeongbokgung</title>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;600&display=swap" rel="stylesheet">
+    <!-- ScrollMasic & gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha512-jlbgjhSLRQsQc/bits6lHjywF3n/NLO3Sz1rwa9gsUnCOi0f0lD/yAul75UNOzIiDg35zaJJ3BKT3zo6+i9lQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha512-vWutwDjKJo+VMAA7IrS/ICTmVYXRMdqtXA27MSuPxGjkbYnKeUKPrIpfsAwIXCzaSDF/qRy/L85ko/yxW0AIiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Noto+Sans+Display:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div id = "wrap">
+        <header id = "header">
+            <!-- <p id ="menu">MENU</p> -->
+            <a href="./index.html"><div id ="logo"><img src="./image/header/logo2.png"></div></a>
+            <a id = "viewmore">View more</a>
+            <div><img src="./image/header/arrowicon.png" alt="x" id = "learnmore"></div>
+            <img src="./image/header/hamburgericon.png" alt ="xx" id ="hamburgernav">
+            <div id = "hamburgermenu">
+                <div class="item item1"><a href="./sub1.html">경복궁 관리소</a></div>
+                <div class="item item2"><a href="./sub3.html">미리보는 경복궁</a></div>
+                <div class="item item3"><a href="./sub2.html">경복궁 행사</a></div>
+                <div class="item item4"><a href="./sub1.html">관람안내</a></div>
+                <div class="item item5"><a href="./sub1.html">관람예약/취소</a></div>
+            </div>
+        </header>
+        <div id = "slider">
+            <h1 id="slidetitle">조선의 궁궐에 다다르다.</h1>
+            <p id= "buttontitle">Learn more</p>
+            <video src="./image/slider/slider.mp4" id = "video"></video>
+        </div>
+        <section>
+            <div id = "covid">
+                <div id ="container">
+                <div id = "image"><img src="./image/covid/covidicon.png" alt="x"></div>
+                <span><strong>INFORMATIONS COVID-19</strong></span><br><br>
+                <p>코로나19 등 전염병 감염 예방 및 관람객 편의향상을
+                   위한 4대궁 비대면 입장시스템을 운영합니다.</p>
+                <p>코로나19 방역 정책 '단계적 일상회복으로의 전환에 따라 중단되었던
+                  '무료 해설관람'을 일부 재개하오니 관람에 참고하시기 바랍니다.</p>
+                <a href="">비대면 입장 운영 자세히 보기</a>
+                </div>  
+            </div>
+            <div id = "article1">
+                <div id ="img"><img src="./image/section/1.png" alt="x"></div>
+                <div id="description">
+                    <h1>경복궁 소개</h1>
+                    <p>
+                        경복궁은 조선 왕조 제일의 법궁입니다.수도 서울의 중심이고 조선의<br>
+                        으뜸 궁궐인 경복궁에서 격조 높고 품위 있는 왕실 문화의 진수를 맛보시기 바랍니다.
+                    </p>
+                    <a href="./sub1.html" id = "viewmore2">Viewmore</a>
+                </div>
+            </div>
+            <div id = "article2">
+                <div id="description">
+                    <h1>생과방</h1>
+                <p>
+                    경복궁 생과방 프로그램은 조선왕조 실록의 내용을 토대로 실제로 임금이 먹었던<br>
+                    궁중병과와 궁중약차를 오늘날에도 즐길 수 있도록 구성된 체험 프로그램입니다.
+                </p>
+                <a href="./sub2.html" id = "viewmore2">Viewmore</a>
+                </div>
+                <div id ="img"><img src="./image/section/2.png" alt="x"></div>
+            </div>
+            <div id = "article3">
+                <div id ="img"><img src="./image/section/3.png" alt="x"></div>
+                <div id="description">
+                    <h1>경복궁 사계</h1>
+                    <p>
+                        경복궁은 낮과 밤 뿐만 아니라 봄여름가을겨울 사계절에 따라 각기 다른 느낌과<br>
+                        풍경을 제공합니다. 사시사철 경복궁에 방문하시어 항상 새로운 풍경을 감상하시기 바랍니다.
+                    </p>
+                    <a href="./sub3.html" id = "viewmore2">Viewmore</a> 
+                </div>
+            </div>
+        </section>
+        <div id = "event">
+            <div id = "dot">
+                <div class = "dot dot1"></div>
+                <div class = "dot dot2"></div>
+                <div class = "dot dot3"></div>
+            </div>
+            <div class = "item item1">
+                <header>
+
+                    <div class="container1">
+                  
+                      <div class="profile">
+                  
+                        <div class="profile-image">
+                  
+                          <img src="image/event/profile.png" alt="" >
+                  
+                        </div>
+                  
+                        <div class="profile-user-settings">
+                  
+                          <h1 class="profile-user-name">GyeongbokPalace_</h1>
+                  
+                          <button class="btn profile-edit-btn">follow</button>
+                  
+                          <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+                  
+                        </div>
+                  
+                        <div class="profile-stats">
+                  
+                          <ul>
+                            <li><span class="profile-stat-count">164</span> posts</li>
+                            <li><span class="profile-stat-count">188</span> followers</li>
+                            <li><span class="profile-stat-count">206</span> following</li>
+                          </ul>
+                  
+                        </div>
+                  
+                        <div class="profile-bio">
+                  
+                          <p>경복궁 페이지 팔로우 시 추첨을 통해 한복 무료 대여+촬영</p>
+                  
+                        </div>
+                  
+                      </div>
+                      <div id = "picture">
+                        <div class="picture picture1">
+                            <img src="./image/event/1.png" alt="x">
+                        </div>
+                        <div class="picture picture2">
+                            <img src="./image/event/2.png" alt="x">
+                        </div>
+                        <div class="picture picture3">
+                            <img src="./image/event/4.png" alt="x">
+                        </div>
+                    </div>
+                    </div>
+                  </header>
+            </div>
+            <div class = "item item2">
+                <div id = "event2">
+                    <div id = "a">
+                    </div>
+                    <div id = "b">
+                        <h3>생과정 무료 시음 이벤트</h3>
+                        <p>
+                            <b>당일 선착순 (30명)</b><br>
+                            (담강다/오미자/대추차)
+                        </p>
+                        <a href="./sub2.html">자세히</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "item item3">
+                <div id = "event3">
+                    <img src="./css/3.jpg">
+                    <div id ="description">
+                        <h2>2021년 하반기</h2>
+                        <h1>경복궁</h1>
+                        <h2>야간 관람 개장</h2>
+                    <p>
+                        2021.10.21(목)~11.29.(월)<br>
+                        19:00-21:30
+                    </p>
+                    <a href="./sub3.html" id = "viewmore">자세히</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id = "footer">
+                <div id = "logo2">
+                    <img src="./image/footer/logo2.png">
+                </div>
+                <div id = "description">
+                    <p>
+                        우)03045 서울특별시 종로구 사직로 161<br>
+                        전화번호(02) 3700-3900 팩스(02) 3700-3909<br>
+                        COPYRIGHT 2014 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.
+                    </p>
+                    <div id = "logo3">
+                        <img src="./image/footer/logo3.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script1.js"></script>
+    <script src="./js/script2.js"></script>
+    <script src="./js/script3.js"></script>
+    <script src="./js/script4.js"></script>
+    <script src="./js/script5.js"></script>
+    <script src="./js/script6.js"></script>
+</body>
+</html>

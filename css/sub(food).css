@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+*{margin:0; padding: 0; box-sizing:border-box;}
+ul, ol, li{list-style: none;}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+
+body{background-color:white;}
+
+#back{width: 100%; height: 2780px; background-color: rgb(255, 250, 240);}
+
+#slidewrap {width: 1903px; height: 700px; margin: 0 auto; position: relative; overflow: hidden;}
+    .slide {width: 7612px;}
+    .slide li {width: 1903px; height: 700px; float: left;}
+    .slide li img {width: 100%; height: 100%;}
+
+#slidewrap span{position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 20px;
+background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%);}
+#slidewrap span:hover{background: rgba(255,255,255,0.8); color:#000;}
+
+.prev {left:0; border-radius: 0 10px 10px 0px; padding:10px;}
+.next {right:0; border-radius: 10px 0px 0px 10px; padding:10px;}
+
+
+.extra_first{width: 100%; height: 150px;}
+
+
+#story{width: 100%; height: 440px;}
+    .story_box{width: 1200px; height: 440px;  margin: 0 auto;}
+    .story_line_top{border-top: 2px solid #666; width: 75px; height: 40px; margin: 0 0 0 565px;}
+    .story_box span{text-align:center; font-size: 18px; line-height: 25px; margin: 0 0 0 20px; display: block; letter-spacing: -1px; font-family: 'RIDIBatang';}
+    .story_line_bottom{border-bottom: 2px solid #666; width: 75px; height: 40px; margin: 0 0 0 565px;}
+
+#icon{width: 100%; height: 70px;}
+    .icon_box{width: 1200px; height: 70px; margin: 0 auto;}
+    .icon_box_set{width: 360px; height: 60px; margin: 0 0 0 455px;}
+    .icon_box_set img{width: 60px; height: 60px; float:left; margin: 0 60px 0 0;}
+
+.extra_second{width: 100%; height: 100px;}
+
+#surasang{width: 100%; height: 450px; }
+    .surasang_box{width: 1200px; height: 450px; margin: 0 auto;}
+    .surasang_left{width: 540px; height: 450px; float: left; text-align: right;}
+    .surasang_left_box{float: right; margin: 125px 25px 0 0;}
+    .surasang_left_box span:nth-of-type(1){letter-spacing: -0.5px; margin: 0 5px 0 0;}
+    .surasang_left_box span:nth-of-type(2){letter-spacing: -2px;}
+    .surasang_left_box p{letter-spacing: -1px; line-height: 24px; margin: 15px 0 0 0;}
+    .surasang_right{float:left; width: 660px; height: 450px;}
+    .surasang_right img{box-shadow: 0px 0px 8px 0px #605440;}
+
+
+.extra_third{width: 100%; height: 60px;}
+
+
+#flower_and_sweets{width: 1200px; height: 795px; margin: 0 auto;}
+    #flower{width: 50%; height: 795px; float:left;}
+    .flower_box{width: 600px; height: 795px; float: right;}
+    .flower_box>img{float: right; margin: 0 75px 0 0;}
+    .flower_box_text{float: right; margin: 25px 75px 0 0;}
+    .flower_box_text{text-align: right;}
+    .flower_box_text span:nth-of-type(1){letter-spacing: -1px;}
+    .flower_box_text span:nth-of-type(2){letter-spacing: -1px;}
+    .flower_box_text p{margin: 15px 0 0 0; letter-spacing: -1px;}
+    .flower_box img{box-shadow: 0px 0px 8px 0px #605440;}
+
+
+#sweets{width: 50%; height: 795px; float:right;}
+    .sweets_box{width:600px; height: 795px; float: left;}
+    .sweets_box>img{float: left; margin: 80px 0 0 35px;}
+    
+    .sweets_box_text{float: left; margin: 25px 0 0 30px;}
+    .sweets_box_text{text-align:left;}
+    .sweets_box_text span:nth-of-type(1){letter-spacing: -1px; margin: 0 0 0 5px;}
+    .sweets_box_text span:nth-of-type(2){letter-spacing: -1px;}
+    .sweets_box_text p{margin: 15px 0 0 8px; letter-spacing: -1px;}
+    .sweets_box img{box-shadow: 0px 0px 8px 0px #605440;}
+
+
+.extra_fourth{width: 100%; height: 150px;}
+
+
+#welcome{width: 100%; height: 90px;}
+    .welcome_box{width: 1200px; height: 90px; margin: 0 auto;}
+    .welcome_box{text-align: center;}
+    .welcome_box p{font-size: 20px; text-align: center; margin: 0 0 10px 0;}
+    .welcome_box span{font-size: 40px; font-family: '국립박물관문화재단클래식B'}
+
+
+.extra_fifth{width: 100%; height: 155px;}
+
+
+#sangabang{width:100%; height: 250px;}
+    .sangabang_box{width: 1200px; height: 250px; margin: 0 auto;}
+    .sangabang_left{width: 540px; height: 195px; float:left;}
+    .sangabang_left>p{font-size: 38px; float: right; margin: 0 130px 0 0; font-family: 'Noto Serif KR', serif;}
+
+    .sangabang_right{width: 660px; height: 195px; float:right;}
+    .sangabang_right>p{font-size: 16px; margin-top: 10px; line-height: 30px; }
+
+
+#cookies{width:1200px; height: 70px; margin: 0 auto;}
+    #cookies p{font-size: 18px; letter-spacing: -1px; margin: 0 0 5px 180px;}
+    .cookies_line{width: 845px; height: 40px; border-top: 2px solid gray; margin: 0 0 0 180px;}
+
+#cookies_background{width: 100%; height: 645px;}
+    .cookiesbackground{width: 1200px; height: 645px; margin: 0 auto;}
+    .cookies_box{width: 890px; height: 645px; margin: 0 auto; display:flex; justify-content:space-around; align-items:center; flex-flow:row wrap;}
+    .cookiebox{width: 220px; height: 305px; float: left; margin: 0 0 35px 8px;}
+    .cookiebox img{width: 185px; height: 160px;}
+    .cookiebox img:hover{transform:scale(1.1); transition: all 0.2s ease-in-out; }
+    .cookiebox p{text-align: left; font-size: 18px; margin: 3px 0 3px 17px; font-weight: bold;}
+    .cookiebox h4{text-align: left; font-size: 16px; margin: 5px 0 0px 17px;}
+    .cookiebox span{text-align: left; display: inline-block; line-height: 16px; font-size: 11px; color: gray; margin: 5px 17px;}
+    .cookiebox a{color: black; text-decoration: none;}
+    .cookiebox a:nth-of-type(1){display: block; width: 185px; height: 160px; overflow: hidden; margin: 17px;}
+
+
+.extra_sixth{width: 100%; height: 80px;}
+
+
+#drink{width:1200px; height: 70px; margin: 0 auto;}
+    #drink p{font-size: 18px; letter-spacing: -1px; margin: 0 0 5px 180px;}
+    .drink_line{width: 845px; height: 40px; border-top: 2px solid gray; margin: 0 0 0 180px;}
+
+#drink_background{width: 100%; height: 645px;}
+    .drinkbackground{width: 1200px; height: 645px; margin: 0 auto;}
+    .drink_box{width: 890px; height: 645px; margin: 0 auto; display:flex; justify-content:space-around; align-items:center; flex-flow:row wrap;}
+    .drinkbox{width: 220px; height: 305px; float: left; margin: 0 0 35px 8px;}
+    .drinkbox img{width: 185px; height: 160px;}
+    .drinkbox img:hover{transform:scale(1.1); transition: all 0.2s ease-in-out; }
+    .drinkbox p{text-align: left; float: left; font-size: 18px; margin: 3px 0 3px 17px; font-weight: bold;}
+    .drinkbox small{font-size: 10px;}
+    .drinkbox h4{text-align: left; font-size: 16px; margin: 5px 0 0px 17px;}
+    .drinkbox span{text-align: left; display: inline-block; line-height: 16px; font-size: 11px; color: gray; margin: 5px 17px;}
+    .drinkbox a{color: black; text-decoration: none;}
+    .drinkbox a:nth-of-type(1){display: block; width: 185px; height: 160px; overflow: hidden; margin: 17px;}
+
+
+.extra_seventh{width: 100%; height: 80px;}
+
+#map{width:1200px; height: 70px; margin: 0 auto;}
+    #map p{font-size: 18px; letter-spacing: -1px; margin: 0 0 5px 180px;}
+    .map_line{width: 845px; height: 80px; border-top: 2px solid gray; margin: 0 0 0 180px;}
+
+
+#map_background{width: 100%; height: 750px;}
+    .map_box{width: 1200px; height: 750px; margin: 0 auto;}
+    .map_box>iframe{margin: 10px 0 25px 180px;}
+    .map_box_text{height: 100px; margin: 0 180px 0 180px;}
+    .map_box_text p{font-size: 15px; text-align: left; margin: 0 0 5px 33px;}
+    .map_box_text h3{font-size: 20px; text-align: left; margin: 3px 0 10px 0; float: left;}
+    .map_box_text img{float: left; bottom: 5px;}
+    .map_box_text a{text-decoration: none; color:black;}
+    .map_box_text a:hover{color:dodgerblue;}
+
+    .tooltip {width: 500px; height:30px; display: inline-block;}
+    .tooltip .tooltiptext {width: 60px; height: 20px; font-size: 9px; background-color:dodgerblue; color:white; text-align: center;  border-radius: 3px; padding: 3px 0; display:inline-block; margin: 7px 0 0 10px; visibility:hidden;}
+    .tooltip:hover .tooltiptext {visibility: visible;}
+
+    .text_line{width: 820px; height: 30px; margin: -50px 0 30px 200px; border-bottom:1px solid lightgray; }
+    .map_box>span{font-size: 13px; display:inline-block; margin: -50px 0 0 210px;}
+
+    header {
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        /* align-items: flex-start;
+        justify-content: flex-end; */
+        /* background-color: blue; */
+        z-index: 100;
+    }
+    
+    header > img {
+        width: 50px;
+        height: 50px;
+        /* justify-self: center; */
+    }
+    
+    header > img:hover {
+        cursor: pointer;
+    }
+    
+    #header #logo {
+        width: 200px;
+        height: 50px;
+        /* background-color: pink; */
+        position: relative;
+        top: 30px;
+        left: 30px;
+        /* left: 50%;
+        transform: translateX(-75%); */
+    }
+    
+    #header #logo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #hamburgernav {
+        position: relative;
+        top: 30px;
+        left: 86%;
+        z-index: 100;
+    }
+    
+    #hamburgermenu {
+        width: 20%;
+        height: 100vh;
+        position: absolute;
+        top: 0%;
+        right: 0;
+        /* background-color: pink; */
+        backdrop-filter: blur(20px);
+        /* display: none; */
+        box-shadow: -10px 10px 40px -8px black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-top: 100px;
+    }
+    
+    #hamburgermenu div {
+        width: 200px;
+        height: 5%;
+        /* background-color: pink; */
+        color: black;
+        border-radius: 20px;
+        background: white;
+        box-shadow:  inset 0px 0px 5px 1px #000000;
+        /* position: relative; */
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
+        text-align: center;
+        padding-top: 11px;
+        margin-top: 60px;
+    }
+    
+    #hamburgermenu .item:hover {
+        cursor: pointer;
+        box-shadow:  inset 0px 0px 5px 3px #000000;
+    }
+
+    footer {
+        width: 100%;
+        height: 21vh;
+        background-color: #6d6d6d;
+        position: relative;
+        top: 320vh;
+        left: 0;
+    }
+    
+    #footer {
+        width: 1200px;
+        height: 100%;
+        /* background-color: pink; */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    
+    #footer #logo2 {
+        width: 200px;
+        height: 50px;
+        /* background-color: red; */
+        /* align-self: flex-start; */
+        margin-top: 15px;
+    }
+    
+    #footer #logo2 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #footer #description {
+        width: 100%;
+        /* height: 100%; */
+        /* background-color: salmon; */
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    #footer #description p {
+        width: 50%;
+        line-height: 30px;
+        color: white;
+        /* background-color: springgreen; */
+    }
+    
+    #footer #description #logo3 {
+        width: 147px;
+        height: 64px;
+        /* background-color: turquoise; */
+        align-self: center;
+        margin-left: 453px;
+    }
+    
+    #footer #description #logo3 img {
+        width: 100%;
+        height: 100%;
+    }
